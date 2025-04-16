@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tyler Webpage</title>
+
+  <!-- Lightbox2 -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+  <style>
+    body {
+      background-color: #f1e7d0;
+      background-image: url('https://www.transparenttextures.com/patterns/french-stucco.png');
+      background-repeat: repeat;
+      color: #3a2e1e;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #bca889;
+      color: #2f1c0f;
+      padding: 40px;
+      text-align: center;
+      border-bottom: 4px solid #8c7356;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      letter-spacing: 1px;
+      font-variant: small-caps;
+      font-weight: bold;
+      margin: 0;
+      color: #3a2e1e;
+    }
+
+    section {
+      padding: 35px;
+      margin: 30px auto;
+      max-width: 1000px;
+      background-color: #f8f2e0;
+      border: 2px solid #cbb38c;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(80, 60, 40, 0.15);
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
+    }
+
+    h2 {
+      font-family: 'Georgia', serif;
+      font-size: 2.2em;
+      color: #4e3b2c;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .juxtapose-wrapper {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: #f8f0da;
+      border: 2px solid #c5b089;
+      border-radius: 10px;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
+      box-shadow: 0 0 10px rgba(100, 80, 50, 0.15);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .juxtapose-iframe {
+      width: 85%;
+      height: 380px;
+      border: none;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .image-gallery-container {
+      background-color: #fdf7e2;
+      border-color: #d3ba96;
+    }
+
+    .project-description {
+      font-size: 1em;
+      text-align: justify;
+      color: #3a2e1e;
+      margin-bottom: 30px;
+      line-height: 1.8;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .image-gallery div {
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid #c0a97c;
+      box-shadow: 0 2px 6px rgba(60, 40, 20, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .image-gallery a.link {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #4e3b1f;
+      background-color: #f4e4c3;
+      border: 1px solid #c8a97e;
+      border-radius: 6px;
+      padding: 6px 12px;
+    }
+
+    .image-gallery a.link:hover {
+      background-color: #edd4a3;
+      color: #2f1c0f;
+    }
+
+    .image-description {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #4b3a28;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .bibliography-section {
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 1000px;
+      background-color: #fdf7e2;
+      border: 2px solid #cbb38c;
+      border-radius: 10px;
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
+      box-shadow: 0 0 10px rgba(80, 60, 40, 0.15);
+      font-size: 15px;
+      line-height: 1.75;
+      color: #3a2e1e;
+      text-align: justify;
+    }
+
+    .bibliography-section h2 {
+      font-size: 2em;
+      color: #4e3b31;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .acknowledgments-section {
+      padding: 30px;
+      margin: 40px auto 60px;
+      max-width: 900px;
+      background-color: #f8f0da;
+      border: 2px solid #b8a88f;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(120, 100, 80, 0.15);
+      background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      background-repeat: repeat;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #3a2e1e;
+      text-align: justify;
+    }
+
+    .acknowledgments-section h2 {
+      color: #4e3b31;
+      font-size: 2em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="juxtapose-wrapper">
+    <iframe 
+      src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=b244e18c-0044-11f0-9397-d93975fe8866"
+      class="juxtapose-iframe"
+      allowfullscreen
+      frameborder="0">
+    </iframe>
+  </section>
+
+  <section class="image-gallery-container">
+    <p class="project-description">
+      This project utilizes ArcGIS to digitally reconstruct ancient Delphi, offering an immersive exploration of its sacred landscape. By blending historical research, archaeology, and digital technology, it brings the sanctuary to life, shedding light on its religious, cultural, and political significance. Delphi was more than just a religious center, it was a place where prophecy shaped decision making, where devotion intersected with identity, and where history was inscribed into the very landscape.history was inscribed into the very landscape. Through this digital recreation, we gain a deeper understanding of how the ancient world perceived and engaged with this legendary site, allowing us to see Delphi not as a distant ruin but as a vibrant and dynamic space of belief, power, and tradition.
+    </p>
+
+    <div class="image-gallery">
+      <div>
+        <a href="PathofProphecyThumbnail4.jpg" data-lightbox="gallery" data-title="Path of Prophecy">
+          <img src="PathofProphecyThumbnail4.jpg" alt="Path of Prophecy Thumbnail">
+        </a>
+        <a href="https://arcg.is/0mzWGX0" target="_blank" class="link">Path of Prophecy</a>
+        <p class="image-description">Path of Prophecy offers a virtual tour of the Sanctuary of Apollo, highlighting its key monuments and their deep connection to the oracle. The tour also explores how individuals, city-states, and empires throughout the ancient world engaged with and interpreted the sanctuary, revealing its significance as both a religious and political center.</p>
+      </div>
+      <div>
+        <a href="PietyOverExcellenceThumbnail5.jpg" data-lightbox="gallery" data-title="Piety Over Excellence">
+          <img src="PietyOverExcellenceThumbnail5.jpg" alt="Piety Over Excellence Thumbnail">
+        </a>
+        <a href="https://arcg.is/1S8Dje" target="_blank" class="link">Piety Over Excellence</a>
+        <p class="image-description">Piety Over Excellence examines how religious devotion at Delphi influenced Greek identity, sometimes outweighing personal or civic achievement. Through oracular consultations, dedications, and sacred competitions, the sanctuary shaped not only individual decisions but also the political and cultural landscape of the Greek world.</p>
+      </div>
+      <div>
+        <a href="DecodingDelphiThumbnail6.jpg" data-lightbox="gallery" data-title="Decoding Delphi">
+          <img src="DecodingDelphiThumbnail6.jpg" alt="Decoding Delphi Thumbnail">
+        </a>
+        <a href="https://arcg.is/1mSybL0" target="_blank" class="link">Decoding Delphi</a>
+        <p class="image-description">Decoding Delphi reveals the research methods behind the project, showcasing how historical sources, archaeology, and digital tools help reconstruct the ancient world. By blending ancient texts with modern technology, this section demonstrates how scholars piece together the past, offering a deeper understanding of Delphi’s role in history.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bibliography-section">
+    <h2>Annotated Bibliography</h2>
+    <p>
+      <strong>Primary Sources</strong><br>
+      Andocides. Minor Attic Orators in two volumes 1, Antiphon Andocides, with an English translation by K. J. Maidment, M.A. Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1968.<br>
+      Anonymous. The Homeric Hymns and Homerica with an English Translation by Hugh G. Evelyn-White. Homeric Hymns. Cambridge, MA., Harvard University Press; London, William Heinemann Ltd. 1914.<br>
+      Apollodorus. Apollodorus, The Library, with an English Translation by Sir James George Frazer, F.B.A., F.R.S. in 2 Volumes. Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1921. Includes Frazer's notes.<br>
+      Aristophanes. Knights. The Complete Greek Drama, vol. 2. Eugene O'Neill, Jr. New York. Random House. 1938.<br>
+      Cicero: De Senectute De Amicitia De Divinatione. With An English Translation. William Armistead Falconer. Cambridge. Harvard University Press; Cambridge, Mass., London, England. 1923.<br>
+      Diodorus Siculus. Library of History. Diodorus of Sicily in Twelve Volumes with an English Translation by C. H. Oldfather. Vol. 4-8. Cambridge, Mass.: Harvard University Press; London: William Heinemann, Ltd. 1989.<br>
+      Euripides. Ion. The Complete Greek Drama, edited by Whitney J. Oates and Eugene O'Neill, Jr. in two volumes. 1. Ion, translated by Robert Potter. New York. Random House. 1938.<br>
+      Herodotus., Robert Strassler, Andrea Purvis, and Tosalind Thomas. The Histories. New York: Anchor Books, 2009.<br>
+      Homer., Robert Fagles, and Bernard Knox. The Illiad. 1st ed. East Rutherford: Penguin Publishing Group, 1999.<br>
+      Lysias. Lysias with an English translation by W.R.M. Lamb, M.A. Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1930.<br>
+      Ovid. Metamorphoses. Brookes More. Boston. Cornhill Publishing Co. 1922.<br>
+      Pausanias. Pausanias Description of Greece with an English Translation by W.H.S. Jones, Litt.D., and H.A. Ormerod, M.A., in 4 Volumes. Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1918.<br>
+      Pindar. Nemean Odes. Diane Arnson Svarlien. 1990.<br>
+      Pindar. Pythian Odes. Diane Arnson Svarlien. 1990.<br>
+      Plato. C.D.C. Reeve. Apology. Indianapolis/Cambridge: Hackett Publishing Company, Inc. 2002.<br>
+      Plutarch. Moralia. with an English Translation by. Frank Cole Babbitt. Cambridge, MA. Harvard University Press. London. William Heinemann Ltd. 1936. 5.<br>
+      Plutarch. Plutarch's Lives. with an English Translation by. Bernadotte Perrin. Cambridge, MA. Harvard University Press. London. William Heinemann Ltd. 1919. 7.<br>
+      Strabo. ed. H. L. Jones, The Geography of Strabo. Cambridge, Mass.: Harvard University Press; London: William Heinemann, Ltd. 1924.<br>
+      The Discourses of Epictetus, with the Encheridion and Fragments. Epictetus. George Long. translator. London. George Bell and Sons. 1890..<br>
+      Xenophon. Xenophon in Seven Volumes, 4. E. C. Marchant. Harvard University Press, Cambridge, MA; William Heinemann, Ltd., London. 1923.<br><br>
+
+      <strong>Secondary Sources</strong><br>
+      Arafat, K.W. “Treasure, Treasuries, and Value in Pausanias.” Classical Quarterly 59, no. 2 (2009): 578–92.<br>
+      Calap, Adil. “Delphi, War and the Question of Arbitration (500–400 BCE).” Social Sciences & Humanities Open 7, no. 1 (2023): 100361-.<br>
+      Castro, Belen Martin, Ioannis Liritzis, and Anne Nyquist. “Oracular Functioning and Architecture of Five Ancient Apollo Temples Through Archaeoastronomy: Novel Approach and Interpretation.” Nexus Network Journal 18, no. 2 (2016): 373–95.<br>
+      Corey, David D. “Socratic Citizenship: Delphic Oracle and Divine Sign.” The Review of Politics 67, no. 2 (2005): 201–28.<br>
+      Cusack, Carole M. The Sacred Tree: Ancient and Medieval Manifestations. 1st ed. Newcastle-upon-Tyne: Cambridge Scholars Publishing, 2011.<br>
+      Downie, Susan Marjorie. “The Political Uses of Hero Cult at Olympia and Delphi.” ProQuest Dissertations & Theses, 2004.<br>
+      Eckerman, Christopher Charles. “Panhellenic Places, Spaces, and Landscapes: Pindar and Bacchylides’ Manipulation of Greek Sanctuaries.” University of California, Los Angeles, 2007.<br>
+      Evans, Nancy. Civic Rites: Democracy and Religion in Ancient Athens. 1st ed. Berkeley: University of California Press, 2010.<br>
+      Flower, Michael A. “Understanding Delphi Through Tibet.” Greece and Rome 65, no. 1 (2018): 34–53.<br>
+      Foster, Margaret. The Seer and the City: Religion, Politics, and Colonial Ideology in Ancient Greece. 1st ed. Berkeley, CA: University of California Press, 2018.<br>
+      Grzesik, Dominika. Honorific Culture at Delphi in the Hellenistic and Roman Periods. Brill Studies in Greek and Roman Epigraphy 17. Leiden, Netherlands; Brill, 2021.<br>
+      Kamen, Deborah. Insults in Classical Athens. Madison, Wisconsin: The University of Wisconsin Press, 2020.<br>
+      Kindt, Julia. Revisiting Delphi: Religion and Storytelling in Ancient Greece. Cambridge: Cambridge University Press, 2016.<br>
+      Kuchel, P. W. “Ancient Omphalos at Delphi: Geometrically a Space-Inverting Anamorphoscope.” Archaeometry 53, no. 2 (2011): 387–95.<br>
+      Kyle, Donald G. Sport and Spectacle in the Ancient World. Second edition. Chichester, West Sussex, United Kingdom: John Wiley and Sons, Inc., 2015.<br>
+      Iannaccone, Laurence R, Colleen E Haight, and Jared Rubin. “Lessons from Delphi: Religious Markets and Spiritual Capitals.” Journal of Economic Behavior & Organization 77, no. 3 (2011): 326–338.<br>
+      Lynch, Tosca A. C, and Eleonora Rocconi. A Companion to Ancient Greek and Roman Music. 1st edition. Newark: Wiley, 2020.<br>
+      Malea, Andrea. “The Ancient Greek Symbolism in the Religious Landscape. The Case of DelphiIl Simbolismo Greco Antico Nel Paesaggio Religioso. Il Caso Di Delfi.” Studia Mythologica Slavica 21 (2018): 97–107.<br>
+      Matt Thompson. “Sparta and Athens: A Monumental Confrontation.” New Classicists, no. 4 (2021): 67–89.<br>
+      Mikalson, Jon D. Ancient Greek Religion. Second edition. Blackwell Ancient Religions. Chichester, West Sussex, England: Wiley-Blackwell, 2010.<br>
+      Miles, Margaret M. A Companion to Greek Architecture. Newark, United States: John Wiley & Sons, Incorporated, 2016.<br>
+      Nardo, Don, and Robert B. Kebric. Ancient Greece. New York, NY, United States: Greenhaven Publishing LLC, 1994.<br>
+      Neer, Richard. “The Athenian Treasury at Delphi and the Material of Politics.” Classical Antiquity 23, no. 1 (2004): 63–93.<br>
+      Neer, Richard T. “Framing the Gift: The Politics of the Siphnian Treasury at Delphi.” Classical Antiquity 20, no. 2 (2001): 273–344.<br>
+      Panagiotopoulou, Dorette. “The Delphic Oracle: The Tension Between Speech, Inscription, and Space.” ProQuest Dissertations & Theses, 2023.<br>
+      Partida, Elena C & Romano. “Politics Reflected on Architecture: An Evaluation of the Aetolian, the Pergamene and the Roman Input to the Religious Landscape at Delphi.” In Listening to the Stones: Essays on Architecture and Function in Ancient Greek Sanctuaries in Honour of Richard Alan Tomlinson. United Kingdom: Archaeopress Publishing Ltd, 2019.<br>
+      Partida, Elena C. “The Nexus of Inter-Regional Relations Established by Creators and Artisans in the Ancient Sanctuary and the Town of Delphi.” Pallas 87, no. 87 (2011): 223–42.<br>
+      Piccardi, Luigi, Cassandra Monti, Orlando Vaselli, Franco Tassi, Kalliopi Gaki-Papanastassiou, and Dimitris Papanastassiou. “Scent of a Myth; Tectonics, Geochemistry and Geomythology at Delphi (Greece).” Journal of the Geological Society 165, no. 1 (2008): 5–18.<br>
+      Richer, Jean. Sacred Geography of the Ancient Greeks: Astrological Symbolism in Art, Architecture, and Landscape. SUNY Series in Western Esoteric Traditions. Albany: State University of New York Press, 1994.<br>
+      Scott, Michael. Delphi: A History of the Center of the Ancient World. 1st ed. Princeton: Princeton University Press, 2014.<br>
+      Scott, Michael. Delphi and Olympia: The Spatial Politics of Panhellenism in the Archaic and Classical Periods. Cambridge University Press, 2010.<br>
+      Shear, T. Leslie. “The Monument of the Eponymous Heroes in the Athenian Agora.” Hesperia 39, no. 3 (1970): 145–222.<br>
+      Smith, Nicholas D. “Some Thoughts about the Origins of ‘Greek Ethics.’” The journal of ethics 5, no. 1 (2001): 3–20.<br>
+      Theocharaki, Anna Maria. “The Ancient Circuit Walls of Athens” Acta Archaeologica 73, no. 1 (2002): 234–240.<br>
+      Rups, M. “Thesauros: A Study of the Treasury Building as found in Greek Sanctuaries.” ProQuest Dissertations & Theses, 1986.
+    </p>
+  </section>
+
+  <section class="acknowledgments-section">
+    <h2>Acknowledgments</h2>
+    <p>
+      I would like to express my deepest gratitude to the professors who have guided and supported me throughout my Master's program at UNO: Dr. Barleta, Dr. Saltamacchia, and Dr. King. Their expertise, encouragement, and commitment to my growth have been invaluable. Through their mentorship, I have gained not only knowledge but also the confidence to pursue my research with insight and dedication. Their willingness to challenge my thinking, provide constructive feedback, and share their passion for the field has profoundly shaped my academic journey. I am truly grateful for their time, patience, and inspiration, and I carry forward their lessons with great appreciation. I would also like to thank Jordan Thai who developed the landing page for my overall project, providing a seamless entry point into this exploration of ancient Delphi.
+    </p>
+  </section>
+</body>
+</html>
+
+
+
